@@ -1,0 +1,29 @@
+---
+metadata:
+  title: Title
+  author: Pandoc Taro
+  date: yyyy/MM/dd
+
+pdf-engine: lualatex
+variables:
+  indent: true
+  classoption:
+    - pandoc
+    #- landscape # for 
+    #- twocolumn # for paper
+  documentclass: ltjsarticle
+  papersize: a4
+  geometry:
+    - top=20mm
+    - right=24mm
+    - left=24mm
+    - bottom=20mm
+    - heightrounded
+  luatexjapresetoptions: ipa
+filters:
+  - pandoc-crossref
+
+self-contained: true
+table-of-contents: true
+toc-depth: 2
+number-sections: true
