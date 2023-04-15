@@ -4,7 +4,7 @@ Generating report.pdf from Markdown
 
 ## Install
 
-```plaintext
+```shell
 $ docker build -t $USER/pandoc:latest . 
 ```
 
@@ -17,7 +17,7 @@ RUN tlmgr option repository https://ftp.math.utah.edu/pub/tex/historic/systems/t
 
 ## Usage
 
-```plaintext
+```shell
 $ alias pandoc='docker run --rm -v "$(pwd):/data" -u $(id -u):$(id -g) $USER/pandoc'
 $ vim report.pdf
  .. (edit)
